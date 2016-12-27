@@ -9,16 +9,21 @@
 #include "UDPServer.h"
 #include "ledString.h"
 
-#define DEFAULTPORT 6666
+#define DEFAULTPORT 5555
 #define LEDANZ 36
+
+#define SLEEPMIN  2000000  // Minimale Zeit zwischen Blinzeln
+#define SLEEPMAX  3000000  // Maximale Zeit zwischen Blinzeln
+#define BLINKTIME  100000  // Blinzelzeit Augen geschlossen
 
 int debug;
 char* Mode;
 
 
-pthread_mutex_t mutexRun,mutexStarRun;
-int WolfRun;
-int StarRun;
+//pthread_mutex_t mutexWolfRun,mutexStarRun;
+pthread_mutex_t mutexThreadRun;
+int WolfThreadRun;
+int StarThreadRun;
 
 int parseCommand(char command[BUFSIZE]);
 

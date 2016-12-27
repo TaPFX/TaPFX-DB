@@ -1,1 +1,13 @@
-Befehlssatz auf den TaPWolf reagiert
+Befehlssatz auf den DB-Server reagiert 
+Der StandartPort des Servers ist 5555
+UDP Komando String startet mit TaPFX-DB
+mit ; werden die Befehle abgetrennt
+Der aktive Effekt kann nur durch das dazugehoerige OFF Komando oder durch exit unterbrochen werden.
+
+TaPFX-DB;WolfON
+TaPFX-DB;WolfOFF
+TaPFX-DB;StarON
+TaPFX-DB;StarOFF
+TaPFX-DB;exit
+
+

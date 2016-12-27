@@ -1,0 +1,11 @@
+Fuer die ws2811 bibliothek ist das installationsprogramm scons noetig
+
+1. installation von scons mit ~$ sudo apt-get install scons
+2. in den ordner TaPFX-DB/work/ws2811 wechseln ~$ cd TaPFX-DB/work/ws2811
+3. scons ausführen  ~$ scons
+4. testen der bibliothek mit ~$ sudo ./test
+5. in work ordner wechseln ~$ cd ..
+6. dort makefile ausfuehren ~$ make
+7. Server starten mit ~$ sudo ./DB-Server -b 100 -d
+8. autostart einrichten wie in autostart.readme beschrieben
+
